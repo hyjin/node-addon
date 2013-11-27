@@ -1,0 +1,28 @@
+{
+  "name": "addon",
+  "version": "0.0.0",
+  "description": "Make your app modular.",
+  "keywords": [
+    "addon",
+    "add-on",
+    "modular",
+    "plugin",
+    "plug-in"
+  ],
+  "homepage": "https://github.com/hyjin/node-addon",
+  "bugs": "https://github.com/hyjin/node-addon/issues",
+  "license": "MIT",
+  "author": "Hyungjin Kim <kim@hyjin.com> (http://hyjin.github.io/)",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hyjin/node-addon.git"
+  },
+  "scripts": {
+    "test": "node test"
+  },
+  "dependencies": {
+    "glob": "~3.2.7"
+  },
+  "devDependencies": {}
+}
