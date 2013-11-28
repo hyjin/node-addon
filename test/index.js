@@ -2,8 +2,10 @@ var assert = require('assert');
 var addon = require('../');
 
 var app = {};
+app.addon = addon;
 
-addon.call(app, __dirname + '/plugins/*.js');
+app.addon(require('./plugins/foo'));
+
 
 assert.equal(app.foo, true);
 
