@@ -22,7 +22,8 @@
     "test": "node test"
   },
   "dependencies": {
-    "glob": "~3.2.7"
+    "glob": "~3.2.7",
+    "util-extend": "~1.0.1"
   },
   "devDependencies": {}
 }

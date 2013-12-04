@@ -25,9 +25,9 @@ hello, John
 var http = require('http');
 var glob = require('glob');
 var server = http.createServer();
-server.addon = require('../');
+server.addon = require('addon');
 
-glob.sync('./plugins/*.js').forEach(function (m) { server.addon(require(m)); });
+server.addon(__dirname + '/plugins/*.js');
 
 server.listen(3000, function () {
     http.get('http://localhost:3000/ping', function (res) {
